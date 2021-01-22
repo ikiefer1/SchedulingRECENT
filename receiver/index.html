@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript"
+        src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
+        //this is the web reciever API
+    </script>
+    <script src = "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.943/build/pdf.min.js"></script><!--This is if we need to convert pdfs-->
+</head>
+<body>
+    <canvas id = "my_canvas" class = "center"></canvas><!--This is if we need to convert pdfs-->
+    <!--<script>
+        //this loads the web reciever framework and disables a timeout
+        const context = cast.framework.CastReceiverContext.getInstance();
+        const options = new cast.framework.CastReceiverOptions();
+        options.disableIdleTimeout = true;
+        context.start(options);
+        context.start();
+    </script>-->
+    <div id="message"></div>
+    <img name = "pic" width = "100%" height = "100%" class = "center" style = "display: none; margin-top: -150"/>
+    <!--<embed id = "pdf1" src = "./Please_DocuSign_vasopr_(1).pdf" style="min-height:100vh;width:100%; display: none;"/>
+    <embed id = "pdf2" src = "./Tiger.pdf" style="min-height:100vh;width:100%; display:none"/>-->
+    
+        
+    <div id="player" style ="display: none" class = "center"></div><!--The <iframe> (and video player) will replace this <div> tag. This is for YouTube API video player. (see chromecast reciever.js)-->
+    <video style = "display: none; margin-top: -150" width = "100%" height = "100%" class = "center" id ="autoplay" muted playsinline controls>
+    </video>
+    
+    <script src = "receiver.js"></script>
+</body>
+</html>

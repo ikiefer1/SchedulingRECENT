@@ -1,0 +1,48 @@
+[ 
+    { "weekdays": [5],
+      "startTime": "1100",
+      "duration": 360,
+      "interval": [10,13],
+      "resources": ["./tiger.jpeg","./sample.mp4"]
+    },
+  
+    { "month": 0,
+      "day": 22,
+      "startTime": "1300",
+      "duration": 8,
+      "interval": [500,30],
+      "resources": ["./giraffe.png","./panda.jpg"]
+    },
+  
+    { "month": 0,
+      "day": 25,
+      "startTime": "1104",
+      "duration":360,
+      "interval": [5],
+      "resources": ["https://cc2.hjsemr.com/kangaroo.jpg"]
+    },
+
+    { "month": 10,
+      "day": 15,
+      "startTime": "1230",
+      "duration":2,
+      "interval": [5],
+      "resources": ["https://cc2.hjsemr.com/kangaroo.jpg"]
+    },
+
+    { "month": 10,
+      "day": 15,
+      "startTime": "1230",
+      "duration":2,
+      "interval": [5],
+      "resources": ["https://cc2.hjsemr.com/kangaroo.jpg"]
+    },
+
+    { "month": 10,
+      "day": 15,
+      "startTime": "1230",
+      "duration":2,
+      "interval": [5],
+      "resources": ["https://cc2.hjsemr.com/kangaroo.jpg"]
+    }
+  ]
