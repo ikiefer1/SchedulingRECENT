@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Start</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- this is the Chrome sender API-->
+  <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+</head>
+<body>
+  <div id = "text" style ="color: red"> Hello World!! </div>
+  <!-- this is the button gui-->
+  <google-cast-launcher id = "castbutton"></google-cast-launcher>
+  <script>
+    //this is the handler that calls initalizeCastApi()
+    window['__onGCastApiAvailable'] = function(isAvailable) {
+      if (isAvailable) {
+        initializeCastApi();
+      }
+    };
+
+  //initializes the cast interaction and API
+  initializeCastApi = function() {
+      console.log("In initalizeCastApi");
+    cast.framework.CastContext.getInstance().setOptions({
+      receiverApplicationId:'FB23975E',
+      autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
+    });
+  };
+  </script>
+  </body>
+</html>
+
+
+

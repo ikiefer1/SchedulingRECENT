@@ -1,0 +1,10 @@
+#castbutton {
+    float: right;
+    margin: 10px 6px 14px 0px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.7;
+    background-color: #000;
+    border: none;
+    outline: none;
+  }
